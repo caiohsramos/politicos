@@ -1,7 +1,10 @@
 import React from 'react'
+import Menu from '../templates/menu'
+import Routes from './routes'
 
 export default props => (
-    <div>
-        <h1>Hello</h1>
+    <div className='container'>
+        <Menu />
+        <Routes />
     </div>
 )
