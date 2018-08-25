@@ -1,5 +1,7 @@
 import React from 'react'
 
+import PageHeader from '../templates/pageHeader'
+
 export default props => (
-    <h1>Políticos</h1>
+    <PageHeader title='Políticos' subtitle='Presidência' />
 )

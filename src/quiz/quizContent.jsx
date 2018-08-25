@@ -14,6 +14,6 @@ export default props => {
             return (<Result />)
             break
         default:
-            return (<Pergunta n={props.progress}/>)
+            return (<Pergunta n={props.progress} handleAnswer={props.handleNext}/>)
     }
 }

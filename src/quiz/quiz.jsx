@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { ProgressBar } from 'react-bootstrap'
 
 import QuizButton from '../templates/quizButton'
-import PageHeader from '../templates/pageHeader'
+import QuizHeader from './quizHeader'
 import QuizContent from './quizContent'
 
 const N = 6
@@ -84,11 +84,10 @@ export default class Quiz extends Component {
     render() {
         return (
             <div>
-                <PageHeader title='Quiz' subtitle={`Tema da pergunta ${this.state.progress}`} />
+                <QuizHeader progress={this.state.progress} N={N}/>
                 <QuizContent progress={this.state.progress} handleNext={this.handleAnswer} N={N} />
-                <ProgressBar now={this.state.progress} max={N} bsStyle="success" />
+                <ProgressBar now={this.state.progress} max={N+1} bsStyle="success" />
                 <QuizButton text='Reset' handleClick={this.handleReset} show={(this.state.progress > 0)} />
-                <QuizButton text='Next' handleClick={() => this.handleAnswer(null)} show={(this.state.progress < (N+1))} />
             </div>
         )
     }
