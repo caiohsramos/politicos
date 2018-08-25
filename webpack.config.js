@@ -25,7 +25,17 @@ module.exports = {
         }, {
             test: /\.css$/,
             use: [MiniCssExtractPlugin.loader, "css-loader"]
-        }]
+        }, {
+            test: /\.(png|jpg|gif)$/i,
+            use: [
+              {
+                loader: 'url-loader',
+                options: {
+                  limit: 10000
+                }
+              }
+            ]
+          }]
     },
     plugins: [
         new HtmlWebPackPlugin({
