@@ -9,10 +9,8 @@ export default props => {
     switch (props.progress) {
         case 0:
             return (<Intro handleDone={props.handleNext}/>)
-            break
         case props.N+1:
             return (<Result />)
-            break
         default:
             return (<Pergunta n={props.progress} handleAnswer={props.handleNext}/>)
     }
