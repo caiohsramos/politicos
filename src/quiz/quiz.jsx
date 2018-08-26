@@ -5,7 +5,7 @@ import QuizButton from '../templates/quizButton'
 import QuizHeader from './quizHeader'
 import QuizContent from './quizContent'
 
-const N = 7 //Numero de perguntas
+const N = 6 //Numero de perguntas
 
 export default class Quiz extends Component {
     constructor(props) {

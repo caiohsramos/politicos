@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Intro from './intro'
-import Pergunta from './pergunta'
+import Tema from './tema'
 import Result from './result'
 
 export default props => {
@@ -12,6 +12,6 @@ export default props => {
         case props.N+1:
             return (<Result />)
         default:
-            return (<Pergunta n={props.progress} handleAnswer={props.handleNext}/>)
+            return (<Tema n={props.progress} handleAnswer={props.handleNext}/>)
     }
 }
