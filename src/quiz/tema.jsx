@@ -18,8 +18,8 @@ export default class Tema extends Component {
 
     renderLines = (counter = 0) => (
         answers[this.props.n-1].map(x =>(
-            <div className='input-group space-top'>
-            <spam key={counter++} className='input-group-addon'>
+            <div className='input-group space-top' key={counter++}>
+            <spam className='input-group-addon'>
                 <Radio value={counter-1} />
             </spam>
             <div className='bg-info'>
@@ -36,7 +36,7 @@ export default class Tema extends Component {
                     {this.renderLines()}
                 </RadioGroup>
                 <p className='text-center'>
-                <Button bsStyle='success space-top ' onClick={() => this.props.handleAnswer(answers[this.props.n-1][this.state.selectedValue].grades)}>Próximo</Button>
+                <Button bsClass='btn btn-success space-top ' onClick={() => this.props.handleAnswer(answers[this.props.n-1][this.state.selectedValue].grades)}>Próximo</Button>
                 </p>
             </div>
         )
