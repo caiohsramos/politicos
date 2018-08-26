@@ -5,7 +5,7 @@ import QuizButton from '../templates/quizButton'
 import QuizHeader from './quizHeader'
 import QuizContent from './quizContent'
 
-const N = 6
+const N = 7 //Numero de perguntas
 
 export default class Quiz extends Component {
     constructor(props) {
@@ -14,18 +14,13 @@ export default class Quiz extends Component {
             progress: 0,
             grades: {
                 alvaro: 0,
-                daciolo: 0,
                 ciro: 0,
                 alckmin: 0,
                 boulos: 0,
                 meirelles: 0,
                 bolsonaro: 0,
                 amoedo: 0,
-                goulart: 0,
-                eymael: 0,
-                lula: 0,
                 marina: 0,
-                vera: 0
             },
         } 
     }
@@ -40,18 +35,13 @@ export default class Quiz extends Component {
                     //Atualizar o grade dos candidatos de acordo com a resposta
                     grades: {
                         alvaro: this.state.grades.alvaro+answer_grades.alvaro,
-                        daciolo: this.state.grades.daciolo+answer_grades.daciolo,
                         ciro: this.state.grades.ciro+answer_grades.ciro,
                         alckmin: this.state.grades.alckmin+answer_grades.alckmin,
                         boulos: this.state.grades.boulos+answer_grades.boulos,
                         meirelles: this.state.grades.meirelles+answer_grades.meirelles,
                         bolsonaro: this.state.grades.bolsonaro+answer_grades.bolsonaro,
                         amoedo: this.state.grades.amoedo+answer_grades.amoedo,
-                        goulart: this.state.grades.goulart+answer_grades.goulart,
-                        eymael: this.state.grades.eymael+answer_grades.eymael,
-                        lula: this.state.grades.lula+answer_grades.lula,
                         marina: this.state.grades.marina+answer_grades.marina,
-                        vera: this.state.grades.vera+answer_grades.vera
                     }
                 }
             )
@@ -64,18 +54,13 @@ export default class Quiz extends Component {
                 progress: 0,
                 grades: {
                     alvaro: 0,
-                    daciolo: 0,
                     ciro: 0,
                     alckmin: 0,
                     boulos: 0,
                     meirelles: 0,
                     bolsonaro: 0,
                     amoedo: 0,
-                    goulart: 0,
-                    eymael: 0,
-                    lula: 0,
                     marina: 0,
-                    vera: 0
                 },
             }
         )
