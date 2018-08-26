@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import { Button } from 'react-bootstrap'
+import { Button, FormControl } from 'react-bootstrap'
 import { RadioGroup, Radio } from 'react-radio-group'
+
 
 import answers from './answers'
 
@@ -17,8 +18,13 @@ export default class Tema extends Component {
 
     renderLines = (counter = 0) => (
         answers[this.props.n-1].map(x =>(
-            <div key={counter++}>
-            <Radio value={counter-1} />{x.text}
+            <div className='input-group space-top'>
+            <spam key={counter++} className='input-group-addon'>
+                <Radio value={counter-1} />
+            </spam>
+            <div className='bg-info'>
+            <FormControl.Static>{x.text}</FormControl.Static>
+            </div>
             </div>)
         )
     )
@@ -29,7 +35,9 @@ export default class Tema extends Component {
                 <RadioGroup selectedValue={this.state.selectedValue} onChange={this.handleChange}>
                     {this.renderLines()}
                 </RadioGroup>
-                <Button bsStyle='primary' onClick={() => this.props.handleAnswer(answers[this.props.n-1][this.state.selectedValue].grades)}>Próximo</Button>
+                <p className='text-center'>
+                <Button bsStyle='success space-top ' onClick={() => this.props.handleAnswer(answers[this.props.n-1][this.state.selectedValue].grades)}>Próximo</Button>
+                </p>
             </div>
         )
     }
