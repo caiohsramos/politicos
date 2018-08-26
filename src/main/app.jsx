@@ -6,9 +6,11 @@ import Footer from '../templates/footer'
 import '../templates/customStyle.css'
 
 export default props => (
+    <div className='content'>
     <div className='container'>
         <Menu />
         <Routes />
         <Footer />
+    </div>
     </div>
 )
