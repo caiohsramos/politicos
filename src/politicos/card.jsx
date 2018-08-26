@@ -105,6 +105,8 @@ export default props => {
                     <Button href="http://divulgacandcontas.tse.jus.br/divulga/#/candidato/2018/2022802018/BR/280000625869" target="_blank" bsClass='btn btn-default pull-right'>Ficha Limpa</Button>
                     </p>
                 </Thumbnail>)
+            default:
+            return(<h3>Err</h3>)
 
         }
     }
