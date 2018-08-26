@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Card from '../politicos/card'
+
 export default props => {
     const renderBest = () => {
         var max = -1
@@ -10,7 +12,7 @@ export default props => {
                 max_key = key
             }
         }
-        return <h2>{max_key}</h2>
+        return <Card name={`${max_key}`} />
     }
     return (
         <div>
