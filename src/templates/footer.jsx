@@ -1,4 +1,5 @@
 import React from 'react'
+
 export default props=>(
 	<div className='footer'>
 	<footer className="navbar-footer panel-footer text-center navbar-fixed-bottom">

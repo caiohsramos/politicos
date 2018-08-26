@@ -70,9 +70,9 @@ export default class Quiz extends Component {
         return (
             <div>
                 <QuizHeader progress={this.state.progress} N={N}/>
-                <QuizContent progress={this.state.progress} handleNext={this.handleAnswer} N={N} grades={this.state.grades} />
                 <ProgressBar now={this.state.progress} max={N+1} bsStyle="info" />
                 <QuizButton text='Reset' handleClick={this.handleReset} show={(this.state.progress > 0)} />
+                <QuizContent progress={this.state.progress} handleNext={this.handleAnswer} N={N} grades={this.state.grades} />
             </div>
         )
     }

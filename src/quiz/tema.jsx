@@ -32,12 +32,12 @@ export default class Tema extends Component {
     render () {
         return (
             <div>
+                <p className='text-right'>
+                <Button bsClass='btn btn-success space-top ' onClick={() => this.props.handleAnswer(answers[this.props.n-1][this.state.selectedValue].grades)}>Próximo</Button>
+                </p>
                 <RadioGroup selectedValue={this.state.selectedValue} onChange={this.handleChange}>
                     {this.renderLines()}
                 </RadioGroup>
-                <p className='text-center'>
-                <Button bsClass='btn btn-success space-top ' onClick={() => this.props.handleAnswer(answers[this.props.n-1][this.state.selectedValue].grades)}>Próximo</Button>
-                </p>
             </div>
         )
     }

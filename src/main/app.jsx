@@ -9,7 +9,9 @@ export default props => (
     <div className='content'>
     <div className='container'>
         <Menu />
+        <div className='conteiner'>
         <Routes />
+        </div>
         <Footer />
     </div>
     </div>
