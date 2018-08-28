@@ -4,10 +4,8 @@ import PageHeader from '../templates/pageHeader'
 import CardsView from './cardsView'
 
 export default props => (
-    <div>
+    <div className='container'>
         <PageHeader title='Políticos' subtitle='Presidência' />
-        <div className='container'>
         <CardsView />
-        </div>
     </div>
 )

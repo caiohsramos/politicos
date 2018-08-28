@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from 'react-bootstrap'
 
 import Card from '../politicos/card'
 
@@ -18,6 +19,7 @@ export default props => {
         <div>
         <h1>Resultado do quiz</h1>
         {renderBest()}
+        <Button onClick={props.handleReset}>Reset</Button>
         </div>
     )
     

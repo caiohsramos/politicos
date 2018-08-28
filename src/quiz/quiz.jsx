@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { ProgressBar } from 'react-bootstrap'
 
-import QuizButton from '../templates/quizButton'
 import QuizHeader from './quizHeader'
 import QuizContent from './quizContent'
 
@@ -68,11 +67,15 @@ export default class Quiz extends Component {
 
     render() {
         return (
-            <div>
+            <div className='container'>
                 <QuizHeader progress={this.state.progress} N={N}/>
                 <ProgressBar now={this.state.progress} max={N+1} bsStyle="info" />
-                <QuizButton text='Reset' handleClick={this.handleReset} show={(this.state.progress > 0)} />
-                <QuizContent progress={this.state.progress} handleNext={this.handleAnswer} N={N} grades={this.state.grades} />
+                <QuizContent 
+                    progress={this.state.progress} 
+                    handleNext={this.handleAnswer} 
+                    N={N} 
+                    grades={this.state.grades}
+                    handleReset={this.handleReset} />
             </div>
         )
     }

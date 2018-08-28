@@ -5,7 +5,7 @@ import image from '../images/image1.jpg'
 import { Image } from 'react-bootstrap'
 
 export default props => (
-    <div>
+    <div className='container'>
         <PageHeader title='Sobre' subtitle='' />
         <h2>Opções</h2>
         <p>As opções disponibilizadas no quiz foram selecionadas de acordo com o mapa das propostas retirado da matéria abaixo.</p>

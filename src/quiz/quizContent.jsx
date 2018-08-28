@@ -10,8 +10,8 @@ export default props => {
         case 0:
             return (<Intro handleDone={props.handleNext}/>)
         case props.N+1:
-            return (<Result grades={props.grades}/>)
+            return (<Result grades={props.grades} handleReset={props.handleReset}/>)
         default:
-            return (<Tema n={props.progress} handleAnswer={props.handleNext}/>)
+            return (<Tema n={props.progress} handleAnswer={props.handleNext} handleReset={props.handleReset}/>)
     }
 }
