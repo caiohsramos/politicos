@@ -37,7 +37,7 @@ export default props => (
                 <Card name='marina' />
             </Col>
             <Col xs={9} md={4}>
-                <Card name='lula' />
+                <Card name='haddad' />
             </Col>
         </Row>
     </Grid>

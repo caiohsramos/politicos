@@ -9,7 +9,7 @@ import meirelles from '../images/henrique-meirelles.jpg'
 import bolsonaro from '../images/jair-bolsonaro.jpg'
 import amoedo from '../images/joao-amoedo.jpg'
 import marina from '../images/marina-silva.jpg'
-import lula from '../images/lula.jpg'
+import haddad from '../images/fernando-haddad.jpg'
 
 export default props => {
     const renderName = () => {
@@ -64,7 +64,7 @@ export default props => {
             case 'bolsonaro':
                 return (<Thumbnail src={bolsonaro} alt="242x200">
                     <h3>Jair Messias Bolsonaro</h3>
-                    <h4>PSC <Label>20</Label></h4>
+                    <h4>PSL <Label>HAHAHA</Label></h4>
                     <div className='text-center'>
                         <Button href="https://www.bolsonaro.com.br/" target="_blank" bsStyle="info" className='m'>Página do Candidato</Button>
                         <Button href="http://divulgacandcontas.tse.jus.br/divulga/#/candidato/2018/2022802018/BR/280000614517" target="_blank" bsStyle='default' className='m'>Ficha Limpa</Button>
@@ -88,13 +88,13 @@ export default props => {
                         <Button href="http://divulgacandcontas.tse.jus.br/divulga/#/candidato/2018/2022802018/BR/280000622171" target="_blank" bsStyle='default' className='m'>Ficha Limpa</Button>
                     </div>
                 </Thumbnail>)
-            case 'lula':
-                return (<Thumbnail src={lula} alt="242x200">
-                    <h3>Luiz Inácio Lula da Silva</h3>
+            case 'haddad':
+                return (<Thumbnail src={haddad} alt="242x200">
+                    <h3>Fernando Haddad</h3>
                     <h4>PT <Label>13</Label></h4>
                     <div className='text-center'>
-                        <Button href="https://lula.com.br/" target="_blank" bsStyle="info" className='m'>Página do Candidato</Button>
-                        <Button href="http://divulgacandcontas.tse.jus.br/divulga/#/candidato/2018/2022802018/BR/280000625869" target="_blank" bsStyle='default' className='m'>Ficha Limpa</Button>
+                        <Button href="https://www.facebook.com/fernandohaddad/" target="_blank" bsStyle="info" className='m'>Página do Candidato</Button>
+                        <Button href="http://divulgacandcontas.tse.jus.br/divulga/#/candidato/2018/2022802018/BR/280000629808" target="_blank" bsStyle='default' className='m'>Ficha Limpa</Button>
                     </div>
                 </Thumbnail>)
             default:
